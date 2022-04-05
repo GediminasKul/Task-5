@@ -21,3 +21,12 @@ const users = [
 ];
 
 // 1
+function filterDogOwners(users) {
+  for (var i = 0, length = users.length; i < length; i++) {
+    if (users[i].hasDog == true) {
+      console.log(users[i].name);
+    }
+  }
+}
+
+filterDogOwners(users);
