@@ -24,7 +24,8 @@ const users = [
 function filterDogOwners(users) {
   for (var i = 0, length = users.length; i < length; i++) {
     if (users[i].hasDog == true) {
-      console.log(users[i].name);
+      // console.log(users[i].name); <------ If we want to know only the names of the users, not the whole array.
+      console.log(users[i]);
     }
   }
 }
@@ -36,7 +37,8 @@ filterDogOwners(users);
 function filterAdults(users) {
   for (var i = 0, length = users.length; i < length; i++) {
     if (users[i].age >= 18) {
-      console.log(users[i].name);
+      // console.log(users[i].name); <----- if we want to know only names of the users, not the whole array.
+      console.log(users[i]);
     }
   }
 }
