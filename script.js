@@ -30,3 +30,15 @@ function filterDogOwners(users) {
 }
 
 filterDogOwners(users);
+
+//2
+
+function filterAdults(users) {
+  for (var i = 0, length = users.length; i < length; i++) {
+    if (users[i].age >= 18) {
+      console.log(users[i].name);
+    }
+  }
+}
+
+filterAdults(users);
